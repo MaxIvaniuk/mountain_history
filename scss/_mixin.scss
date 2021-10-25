@@ -1,0 +1,46 @@
+// Media Query triggers
+@mixin small {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+}
+
+@mixin tablets {
+    @media only screen and (max-width: 481px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+// Fonts
+
+@mixin PlayfairDisplay {
+    font-family: 'Playfair Display', serif;
+}
+
+@mixin Gilroy {
+    font-family: 'Gilroy', monospace;
+}
+
+// @mixin font($font_name, $file_name, $weight, $style) {
+//     @font-face {
+//         font-family: "#{$font-name}";
+//         font-display: swap;
+//         src: url("../fonts/#{$file_name}.woff") format("woff"), 
+//             url("../fonts/#{$file_name}.woff2") format(woff2);
+//         font-weight: #{$weight};
+//         font-style: #{$style}; 
+//     }
+// }
+
+//Default list style removal
+
+@mixin defaultList {
+    list-style: none;
+    text-decoration: none;
+}
