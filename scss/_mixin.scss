@@ -44,3 +44,10 @@
     list-style: none;
     text-decoration: none;
 }
+
+@mixin inputStyles {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 45%;
+}

@@ -22,13 +22,13 @@
                 <nav class="header_nav">
                     <ul class="header_nav__list">
                         <li class="header_nav__item">
-                            <a href="#" class="header_nav__link">Equipment</a>
+                            <a href="#" class="header_nav__link">Маршрути</a>
                         </li>
                         <li class="header_nav__item">
-                            <a href="#" class="header_nav__link">About Us</a>
+                            <a href="#" class="header_nav__link">Контакти</a>
                         </li>
                         <li class="header_nav__item">
-                            <a href="#" class="header_nav__link">Blog</a>
+                            <a href="#" class="header_nav__link">Блог</a>
                         </li>
                     </ul>
                 </nav>
@@ -55,14 +55,9 @@
                                 </a>
                             </li>
                         </ul>
-                        
                     </div>
                 </div>
                 <div class="main_header">
-                    <!-- <div class="guide_line">
-                        <span class="guide_line__line"></span>
-                        <p class="guide_line__text">A hiking guide</p>
-                    </div> -->
             
                     <div class="heading_content">
                         <h1 class="heading_content__text">
@@ -77,24 +72,7 @@
                             <i class="fas fa-arrow-down scroll_btn__icon"></i>
                         </a>
                     </div>
-            
                 </div>
-                <!-- <div class="scroller">
-                    <ul class="scroller_list">
-                        <li class="scroller_list__item">
-                            <a href="#" class="scroller_list__link">Start</a>
-                        </li>
-                        <li class="scroller_list__item">
-                            <a href="#" class="scroller_list__link">1</a>
-                        </li>
-                        <li class="scroller_list__item">
-                            <a href="#" class="scroller_list__link">2</a>
-                        </li>
-                        <li class="scroller_list__item">
-                            <a href="#" class="scroller_list__link">3</a>
-                        </li>
-                    </ul>
-                </div> -->
             </div>
         </section>
         <section class="content">
@@ -103,10 +81,10 @@
                     <div class="getStarted_content content_position">
                         <div class="guide_line">
                             <span class="guide_line__line"></span>
-                            <p class="guide_line__text">Get Started</p>
+                            <p class="guide_line__text">Для досвідчених</p>
                         </div>
                         <h3 class="content_header">
-                            What level of  hiker are you?
+                            Чоргонірський хребет
                         </h3>
                         <div class="content_descritpion">
                             <p class="content_descritpion__text">
@@ -114,7 +92,7 @@
                             </p>
                         </div>
                         <div class="content_more" id='getStarted'>
-                            <span class="content_more__text">read more</span>
+                            <span class="content_more__text">Докладніше</span>
                             <i class="fas fa-arrow-right content_more__icon"></i>
                         </div>
                     </div>
@@ -127,12 +105,10 @@
                     <div class="essentials_content content_position">
                         <div class="guide_line">
                             <span class="guide_line__line"></span>
-                            <p class="guide_line__text">
-                                Hiking Essentials
-                            </p>
+                            <p class="guide_line__text">Початківцям</p>
                         </div>
                         <h3 class="content_header">
-                            Picking the right Hiking Gear!
+                            Західні Горгани
                         </h3>
                         <div class="content_descritpion">
                             <p class="content_descritpion__text">
@@ -141,7 +117,7 @@
                             </p>
                         </div>
                         <div class="content_more" id='getStarted'>
-                            <span class="content_more__text">read more</span>
+                            <span class="content_more__text">Докладніше</span>
                             <i class="fas fa-arrow-right content_more__icon"></i>
                         </div>
                     </div>
@@ -153,12 +129,10 @@
                     <div class="route_content content_position">
                         <div class="guide_line">
                             <span class="guide_line__line"></span>
-                            <p class="guide_line__text">
-                                where you go is the key
-                            </p>
+                            <p class="guide_line__text">середній рівень</p>
                         </div>
                         <h3 class="content_header">
-                            Understand Your Map and Timing
+                            Осінні Мармароси
                         </h3>
                         <div class="content_descritpion">
                             <p class="content_descritpion__text">
@@ -166,7 +140,7 @@
                             </p>
                         </div>
                         <div class="content_more" id='getStarted'>
-                            <span class="content_more__text">read more</span>
+                            <span class="content_more__text">Докладніше</span>
                             <i class="fas fa-arrow-right content_more__icon"></i>
                         </div>
                     </div>
@@ -180,16 +154,35 @@
         <section class="contact">
             <div class="container contact_container">
                 <div class="contact_header">
-                    <h2 class="contact_header__text">Contact us</h2>
-                    <p class="contact_header__decr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, aperiam.</p>
+                    <h2 class="contact_header__text">Залишились питання?</h2>
+                    <p class="contact_header__descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, aperiam.</p>
                 </div>
-                <div class="contact_field">
-                    <form class="contact_form" action="#" method="get">
-                        <input class="contact_form__name" type="text" name="" id="">
-                        <input class="contact_form__mail" type="email" name="" id="">
-                        <textarea class="contact_form__text" name="" id="" cols="30" rows="10"></textarea>
-                        <button class="contact_form__button" type="submit">Send now</button>
+                <div class="contact_form">
+                    <form class="form" id="contact-form" method="POST" action="#">
+                        <div class="inputs_container">
+                            <div class="form_input form_name">
+                                <input type="text" class="form_input__field form_name__input " placeholder="Your Name" name="userName" id="formName" required />
+                                <label for="formName" class="form_input__label form_name__label">Your Name</label> 
+                            </div>                       
+                            
+                            <div class="form_input form_email">
+                                <input class="form_input__field form_email__input " type="email" name="userEmail" id="formEmail" placeholder="Your e-mail" required />
+                                <label for="formEmail" class="form_input__label form_email__label">Your e-mail</label>
+                            </div>
+                        </div>
+                        <div class="form_message">
+                            <textarea class="form_message_textarea" name="message" id="message" cols="20" rows="5" placeholder="Your message" required></textarea>
+                            <label for="message" class="form_message__label">Your message</label>
+                        </div>
+                        <button class="form__button " id="form-button" type="submit">Send Now</button>
+
+                        <!-- <div class="form__gratitude" id="gratitude">
+                            <p class="form__gratitude_text">
+                                Thank you for the contact I will answer you soon
+                            </p>
+                        </div> -->
                     </form>
+                    
                 </div>
             </div>
         </section>
