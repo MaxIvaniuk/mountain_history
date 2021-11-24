@@ -14,24 +14,28 @@
                 <div class="header_logo">
                     <a href="#" class="header_logo__link">MNTN</a>
                 </div>
-                <div class="mobile_toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+
+                <div class="header_nav">
+                    <label for="check" class="mobile_toggle">
+                        <input type="checkbox" id="check" class="mobile_toggle__input">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="main_nav mobile_nav">
+                        <ul class="main_nav__list">
+                            <li class="main_nav__item">
+                                <a href="#" class="main_nav__link">Маршрути</a>
+                            </li>
+                            <li class="main_nav__item">
+                                <a href="#" class="main_nav__link">Контакти</a>
+                            </li>
+                            <li class="main_nav__item">
+                                <a href="#" class="main_nav__link">Блог</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header_nav">
-                    <ul class="header_nav__list">
-                        <li class="header_nav__item">
-                            <a href="#" class="header_nav__link">Маршрути</a>
-                        </li>
-                        <li class="header_nav__item">
-                            <a href="#" class="header_nav__link">Контакти</a>
-                        </li>
-                        <li class="header_nav__item">
-                            <a href="#" class="header_nav__link">Блог</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </header>
@@ -161,20 +165,20 @@
                     <form class="form" id="contact-form" method="POST" action="#">
                         <div class="inputs_container">
                             <div class="form_input form_name">
-                                <input type="text" class="form_input__field form_name__input " placeholder="Your Name" name="userName" id="formName" required />
+                                <input type="text" class="form_input__field form_name__input " name="userName" id="formName"  placeholder=" " required />
                                 <label for="formName" class="form_input__label form_name__label">Your Name</label> 
                             </div>                       
                             
                             <div class="form_input form_email">
-                                <input class="form_input__field form_email__input " type="email" name="userEmail" id="formEmail" placeholder="Your e-mail" required />
+                                <input class="form_input__field form_email__input " type="email" name="userEmail" id="formEmail" placeholder=" " required />
                                 <label for="formEmail" class="form_input__label form_email__label">Your e-mail</label>
                             </div>
                         </div>
                         <div class="form_message">
-                            <textarea class="form_message_textarea" name="message" id="message" cols="20" rows="5" placeholder="Your message" required></textarea>
-                            <label for="message" class="form_message__label">Your message</label>
+                            <textarea class="form_message__textarea form_input__field" name="message" id="message" placeholder=" " required></textarea>
+                            <label for="message" class="form_message__label form_input__label">Your message</label>
                         </div>
-                        <button class="form__button " id="form-button" type="submit">Send Now</button>
+                        <button class="form_button " id="form-button" type="submit">Send Now</button>
 
                         <!-- <div class="form__gratitude" id="gratitude">
                             <p class="form__gratitude_text">
@@ -216,6 +220,7 @@
         </div>
     </footer>
     <script src="./js/nav.js"></script>
+    <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/897451f4d4.js" crossorigin="anonymous"></script>
 </body>
 </html>
