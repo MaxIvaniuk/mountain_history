@@ -1,21 +1,13 @@
 // Burger toggle
-let toggler = document.querySelector('.mobile_toggle');
-let header = document.querySelector('.header');
-let navLink = document.querySelector('.header_nav_list__link');
+const toggler = document.querySelector('.mobile_toggle__input'),
+      mobileNav = document.querySelector('.mobile_nav'),
+      header = document.querySelector('.header'),
+      navLink = document.querySelector('.header_nav_list__link');
 
-toggler.addEventListener('click', () => {
-    if (header.classList.contains('open_nav')) {
-        header.classList.remove('open_nav')
-    } else {
-        header.classList.add('open_nav')
-    }
+
+toggler.addEventListener('change', () => {
+    mobileNav.classList.toggle('open_nav')
 })
-
-// navLink.addEventListener('click', () => {
-//     if (header.classList.contains('open_nav')) {
-//         header.classList.remove('open_nav')
-//     }
-// })
 
 // Sticky Header
 window.addEventListener('scroll', () => {
